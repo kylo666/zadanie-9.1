@@ -1,16 +1,10 @@
-﻿var getTriangleArea=function(a, h){
-if (a <= 0 || h<=0) {
-	alert ("Nieprawidlowe dane");
-}
-else {
-return a*h/2;
-}
+﻿var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
+var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+var allNames = femaleNames.concat(maleNames);
 
-}
+console.log(allNames);  //  ['Asia', 'Kasia', 'Ola', 'Jola','Piotrek', 'Marek', 'Arek', 'Jarek' ];
 
-console.log(getTriangleArea(10, 6))
-<script>
-var triangle1Area = getTriangleArea(10, 15);
-    triangle1Area2 = getTriangleArea(12, 5);
-    triangle1Area3 = getTriangleArea(1, 11);
-</script>
+var newName = 'Marian'
+if (allNames.indexOf(newName) === -1) {
+allNames.push('Marian');
+	console.log('Wyswietl Tablice');}
